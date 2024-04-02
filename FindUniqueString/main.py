@@ -3,7 +3,6 @@ from typing import List
 
 def find_uniq(strings: List):
     strings_sorted = [''.join(sorted(string.lower())) for string in strings]
-    strings_sorted = [string for string in strings_sorted]
     char_distribution = {}
     for string in strings_sorted: 
         for char in string:
